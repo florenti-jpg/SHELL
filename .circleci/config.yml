@@ -28,7 +28,7 @@ jobs:
 
       - run: sudo npm i -g @angular/cli > /dev/null
       - run: npm i 
-      - run: docker build .
+      - run: docker build 
       - run: zip -r package.zip . -i dist/package/
 
       - save_cache:
